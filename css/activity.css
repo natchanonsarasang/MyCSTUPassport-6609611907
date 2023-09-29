@@ -1,0 +1,40 @@
+.navi{
+    background-color:blue;
+    flex-direction:column;
+    height: 35px;
+    width: 100%;
+    border: 1px solid;
+   
+    
+}
+.home{
+    float: left;
+    color: white;
+    margin-left: 20px;
+
+
+
+}
+.menu{
+    float: right;
+    display: flex;
+
+    
+}
+ul.menu li{
+    
+    font-size: 15px;
+    list-style: none;
+    margin-left: 20px;
+    color: aliceblue;
+    margin-right: 20px;
+    
+}
+ul.menu li a{
+    text-decoration: none;
+    color: aliceblue;}
+.mid{
+    text-align: center;
+    margin-top: 25px;
+
+}
