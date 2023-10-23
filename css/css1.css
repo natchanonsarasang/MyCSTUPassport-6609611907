@@ -1,5 +1,5 @@
 .main{
-    border: 1px solid;
+    border: 0.5px solid;
     width: 100%;
     height: 300px;
     background-image: url(../image/sky.jpg);
@@ -8,56 +8,7 @@
 }
 
 .header{
-   text-align: center;
-    
-    
-
-}
-.header2{
-    margin-left: 30px;
-
-
-
-}
-.a1{
-   
-    width: 150px;
-    height: 150px;
-    padding: 2rem;
-    float: left;
-}
-.second1{
-    margin-top: 30px;
-    margin-left: 30px;
-    float: left;
-}
-.textfirst{
-    margin-top: 30px;
-    margin-left: 30px;
-}
-.image1{
-    display: flex;
-    justify-content: center;
     text-align: center;
-    margin-top: 20px;
-
-
-
-}
-.video1{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-.center{
-text-align: center;
-font-size: 20px;
-}
-.food{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-
 }
 .margin1{
     margin-left: 25px;
@@ -66,7 +17,7 @@ font-size: 20px;
 
 }
 .navi{
-    background-color:blue;
+    background-color:rgb(85, 85, 231);
     flex-direction:column;
     height: 35px;
     width: 100%;
@@ -76,18 +27,18 @@ font-size: 20px;
     
 }
 .menu{
-    display: flex;
     float:right;
-    margin-bottom: 100px;
+
     
 }
 ul.menu li{
-    
+    display: inline-block;
     font-size: 15px;
     list-style: none;
     margin-left: 20px;
     color: aliceblue;
     margin-right: 20px;
+    margin: 0 5px;
     
 }
 ul.menu li a{
@@ -102,3 +53,77 @@ ul.menu li a{
    
 }
 
+.Grid{
+   
+   display: grid;
+   grid-template-columns: 25% 50% 25%;
+   grid-template-rows: auto;
+   grid-template-areas: 
+        'menulist midcontent rightcontent';
+}
+.leftcontent{
+    grid-area: menulist;
+    
+}
+.midcontent{
+    grid-area: midcontent;
+}
+.rightcontent{
+    grid-area: rightcontent;
+}
+.leftcontent{
+    margin-top: 10px;
+    text-align: center;
+    align-items: center;
+}
+.midcontent{
+   
+    text-align: center;
+}
+.rightcontent{
+    
+    text-align: center;
+}
+.whitetext{
+    color: aliceblue;
+}
+.image1{
+    width: 150px;
+    height: 150px;
+    margin-top: 15px;
+    margin-left: 42%;
+    
+}
+.textback{
+    background-color: rgb(132, 132, 238);
+    color: aliceblue;
+    height: 70px;
+    text-align: center;
+    margin-top: 30px;
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .Grid{
+        
+        grid-template-columns: 25% 75% ;
+        grid-template-rows: auto;
+        grid-template-areas: 
+             'menulist midcontent '
+             'space rightcontent';
+    }
+    .food11{
+        display: inline-block;
+        
+    }
+ }
+@media only screen and (max-width: 550px) {
+   .Grid{
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+         'menulist' 'midcontent' 'rightcontent';
+   }
+}
+
+  
